@@ -20,3 +20,5 @@ RUN export GS_MAJOR=$(echo ${GS_VERSION} | awk -F "." '{print $1"."$2}') \
     && find /tmp/geoserver/plugins/ -name "*.zip" | awk '{print "unzip "$1" -d $CATALINA_HOME/webapps/geoserver/WEB-INF/lib/"}' | sh || true \
     && rm -rf $CATALINA_HOME/webapps/geoserver/data \
     && rm -rf /tmp/geoserver
+
+CMD ["catalina.sh","run"]
