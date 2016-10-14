@@ -1,6 +1,6 @@
 FROM tomcat:8.5-alpine
 
-ARG GS_VERSION=2.8.5
+ARG GS_VERSION=2.9.2
 
 RUN apk update && apk upgrade && apk add --no-cache $(apk search -q ttf- | grep -v '\-doc')
 
