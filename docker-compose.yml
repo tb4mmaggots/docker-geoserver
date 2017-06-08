@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  geoserver:
+    container_name: geoserver
+    build: .
+    volumes:
+      - ./data:/usr/local/tomcat/webapps/geoserver/data
+    ports:
+      - "8000:8080"
