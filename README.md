@@ -19,7 +19,7 @@
    `$ docker-compose build`
 
 ### Run
-`$ docker run -d --name geofence -p 8080:8080 -v $(pwd)/data:/usr/local/tomcat/webapps/geoserver/data geoserver:2.11.1` 
+`$ docker run -d --name geoserver -p 8080:8080 -v $(pwd)/data:/usr/local/tomcat/webapps/geoserver/data geoserver:2.11.1` 
 
 OR 
 
