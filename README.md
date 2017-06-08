@@ -24,3 +24,7 @@
 OR 
 
 `$ docker-compose up -d`
+
+### Automated Build
+
+`$ docker pull tb4mmaggots/geoserver`
